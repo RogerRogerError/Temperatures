@@ -19,3 +19,13 @@ january_temp_data = """2016,   6, 51
         2002,  11, 55
         2001,   1, 43
         2000,  -2, 56"""
+
+january_lows = {}
+
+january_highs = {}
+
+splitting_data = january_temp_data.split("\n")
+for year_data in splitting_data:
+    year_datalist = year_data.split(",")
+    january_lows[int(year_datalist[0])] = int(year_datalist[1])
+    january_highs[int(year_datalist[0])] = int(year_datalist[2])
