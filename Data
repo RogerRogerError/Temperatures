@@ -29,3 +29,5 @@ for year_data in splitting_data:
     year_datalist = year_data.split(",")
     january_lows[int(year_datalist[0])] = int(year_datalist[1])
     january_highs[int(year_datalist[0])] = int(year_datalist[2])
+print (january_lows)
+print (january_highs)
